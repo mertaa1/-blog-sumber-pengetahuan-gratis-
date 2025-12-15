@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Artikel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="index.html">⬅ Kembali</a>
+  <h1 id="title"></h1>
+  <p id="content"></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("title").innerText = params.get("title");
+    document.getElementById("content").innerText = params.get("content");
+  </script>
+</body>
+</html>
